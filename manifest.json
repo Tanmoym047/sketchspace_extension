@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "SketchSpace Clipper",
+  "version": "1.0",
+  "permissions": ["activeTab", "tabs"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://sketchspace-46391.web.app/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
