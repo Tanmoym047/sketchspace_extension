@@ -11,7 +11,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://sketchspace-46391.web.app/*"],
+      "matches": ["https://sketchspace-46391.web.app/*", "http://localhost:5173/*"],
       "js": ["content.js"]
     }
   ]

@@ -9,7 +9,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
       const roomId = "clip-" + Date.now();
       // Opens your board with the specific 'extension' flag
       chrome.tabs.create({ 
-        url: `https://sketchspace-46391.web.app/board/${roomId}?import=extension` 
+        url: `${process.env.VITE_FRONTEND_URL}/board/${roomId}?import=extension` 
       });
     });
   }
