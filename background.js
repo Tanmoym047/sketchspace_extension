@@ -13,7 +13,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         : "text-" + Date.now();
       
       chrome.tabs.create({ 
-        url: `http://localhost:5173/board/${roomId}?import=text` 
+        url: `https://sketchspace-46391.web.app/board/${roomId}?import=text` 
       });
     });
   }
